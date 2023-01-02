@@ -1,0 +1,213 @@
+/* Start of Back to Home Button */
+.backHomeLink {
+    transition: all 0.25s ease-in-out;
+    position: relative;
+    top: 55px;
+    left: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    margin: auto auto auto 0.25rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.backHomeLink:hover {
+    background-color: rgb(85, 85, 85, 0.2);
+}
+
+.backHomeLink img {
+    width: 25px;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(10deg) brightness(111%) contrast(101%);
+    transform: rotate(-90deg);
+}
+/* End of Back to Home Button */
+
+/* Start of Pokémon Card Info */
+#pokemonCardInfo {
+    display: grid;
+    grid-template-rows: 8rem 4.5rem 5rem 2.5rem 3rem;
+    grid-template-columns: 1fr;
+}
+
+#pokemonCardInfo .image {
+    border-radius: 1rem 1rem 0 0;
+    grid-row: 1 / 3;
+    grid-column: 1 / -1;
+    background-image: -webkit-linear-gradient(-90deg, rgba(255,255,255,0) 0, rgb(246, 248, 252) 100%);
+    background-image: -moz-linear-gradient(180deg, rgba(255,255,255,0) 0, rgb(246, 248, 252) 100%);
+    background-image: linear-gradient(180deg, rgba(255,255,255,0) 0, rgb(246, 248, 252) 100%);
+    background-position: 50% 50%;
+    -webkit-background-origin: padding-box;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-size: auto auto;
+    background-size: auto auto;
+}
+
+#pokemonCardInfo .image .avatar {
+    max-width: 100%;
+    height: 14rem;
+    margin: 1rem auto 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#pokemonCardInfo .number {
+    font-size: 0.85rem;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(129, 142, 151);
+    margin-top: 3rem;
+}
+
+#pokemonCardInfo .name {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 800;
+    color: rgb(74, 74, 74);
+
+}
+
+#pokemonCardInfo .types {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#pokemonCardInfo .type {
+    font-size: 0.6rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.02rem;
+    color: rgba(0, 0, 0, 0.4);
+    padding: 0.4rem 0.5rem;
+    margin: 0 0.25rem 1rem 0;
+    border-radius: 0.3rem;
+    box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+}
+/* End of Pokémon Card Info */
+
+/* Start of Pokémon Basic Info */
+#pokemonBasicInfo {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#pokemonBasicInfo .data {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: rgb(92, 93, 94);
+    margin: 0.5rem 0 0.25rem 0;
+}
+
+#pokemonBasicInfo .dataDescription {
+    font-size: 0.6rem;
+    color: rgb(129, 142, 151);
+    margin: 0 0 0.5rem 0;
+}
+
+#pokemonBasicInfo #species {
+    height:3rem;
+    border-right: 0.125rem solid rgb(129, 142, 151);
+    padding-right: 1.5rem;
+    margin: 0.4rem 0 0;
+}
+
+#pokemonBasicInfo #height {
+    height:3rem;
+    border-right: 0.125rem solid rgb(129, 142, 151);
+    padding: 0 1.5rem;
+    margin: 0.4rem 0 0;
+}
+
+#pokemonBasicInfo #weight {
+    height:3rem;
+    padding-left: 1.5rem;
+    margin: 0.4rem 0 0;
+}
+/* End of Pokémon Basic Info */
+
+/* Start of Pokémon Description */
+#pokemonDescription {
+    color: rgb(92, 93, 94);
+    font-size: 0.85rem;
+    text-align: center;
+    letter-spacing: 0.02rem;
+    margin: 1rem 1rem 3rem;
+}
+/* End of Pokémon Description */
+
+/* Start of Pokémon Base Stats */
+#pokemonStats p {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: rgb(92, 93, 94);
+    text-align: center;
+    
+}
+
+#pokemonStats .baseStats {
+    font-size: 0.85rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+#pokemonStats .baseStats .statsName {
+    font-weight: 600;
+    color: rgb(92, 93, 94, 0.7);
+}
+
+#pokemonStats .baseStats .statsName li {
+    margin-bottom: 0.6rem;
+}
+
+#pokemonStats .baseStats .name {
+    margin: 0 0 0.5rem 0.5rem;
+}
+
+#pokemonStats .baseStats .value {
+    margin: 0 0 0.5rem 1.5rem;
+}
+
+#pokemonStats .baseStats .statsBar{
+    width: 60%;
+    display: grid;
+    grid-template-rows: 1.55rem 1.55rem 1.4rem 1.45rem 1.5rem;
+    grid-template-columns: 1fr;
+    margin: 0.25rem 2rem 0.25rem 0;
+}
+
+#pokemonStats .baseStats .outterBar {
+    width: 100%;
+    height: 8px;
+    border-radius: 10px;
+    background-color: rgba(204, 204, 204, 0.5);
+    margin-left: 1.25rem;
+}
+
+#pokemonStats .baseStats .outterBar .innerBar {
+    height: 100%;
+    border-radius: 10px;
+    margin-bottom: 0.6rem;
+}
+/* End of Pokémon Base Stats */
